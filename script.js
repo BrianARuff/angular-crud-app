@@ -1,5 +1,5 @@
 angular.module("MyApp", []).controller("MainCtrl", function($scope) {
-  $scope.world = "Front end masters";
+  $scope.world = "Brian Ruff";
   $scope.todoList = ["wash clothes", "clean up room"];
   $scope.newItem = document.querySelector("#todo");
   $scope.addTodo = function() {
