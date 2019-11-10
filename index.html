@@ -11,9 +11,11 @@
     <ul ng-repeat="(index, todo) in todoList track by index">
       <li id="li-{{ index }}">{{ todo }}</li>
       <button ng-click="removeTodo(index)">Remove</button>
-      <div>
-        <input type="text" name="edit" id="edit-{{ index }}" />
-        <button ng-click="editTodo(index)">Edit Value</button>
+      <div id="edit-container">
+        <input ng-model="todo" type="text" name="edit" id="edit-{{ index }}" />
+        <button ng-click="editTodo(index)">
+          Edit Value
+        </button>
       </div>
     </ul>
     <div>
